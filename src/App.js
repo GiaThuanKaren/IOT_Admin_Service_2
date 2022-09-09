@@ -1,7 +1,15 @@
+import { useEffect, useState } from "react";
 import "./App.css";
 import { SearchAppBar } from "./Components";
 
 function App() {
+  const [properties , SetProperties ]= useState({
+    dataListFolder:[]
+  })
+  
+  useEffect(()=>{
+
+  },[])
   return (
     <>
       <SearchAppBar />
