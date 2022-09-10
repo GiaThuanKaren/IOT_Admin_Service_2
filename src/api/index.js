@@ -1,6 +1,7 @@
 import axios from "axios";
-const GETALLFOLDER = "http://localhost:5000/client/listallfolder";
-const GETALLFILE_INFOLDER = "http://localhost:5000/client/listallfile/";
+const NetWork = "https://iot-service-1.vercel.app";
+const GETALLFOLDER = `${NetWork}/client/listallfolder`;
+const GETALLFILE_INFOLDER = `${NetWork}/client/listallfile/`;
 export const GetAllFolder = async function(){
     let {data}=await axios.get(GETALLFOLDER);
     return data;
